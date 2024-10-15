@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: one;
+    src: url(fonts/Alviona.ttf);
+}
+
+@font-face {
+    font-family: two;
+    src: url(fonts/Lemon\ Mocktail\ .ttf);
+}
+
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fdf3f3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    overflow-x: hidden;
+    background-image: url(fondo.jpg);
+    background-size: cover;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.screen h1{
+    font-size: 40px;
+}
+
+
+.screen.active {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 1;
+}
+
+h1 {
+    font-size: 70px;
+    color: rgb(245, 146, 163);
+    padding: 10px;
+    font-family: one;
+}
+
+p {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-family: two;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 2px solid rgb(245, 146, 163);
+}
+
+img {
+    max-width: 300px;
+    margin: 20px 0;
+}
+
+.choice-btn {
+    color: #ffffff;
+    background-color: rgb(29, 28, 28);
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-family: two;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    width: 300px;
+    transition: 0.2s ease 0s all;
+    z-index: 1000;
+}
+
+
+
+.choice-btn:hover {
+    transform: translateY(-10px);
+}
+
+/* Animaciones */
+.snoopy-img {
+    animation: float 3s ease-in-out infinite;
+}
+
+.snoopy-img {
+    animation: float 3s ease-in-out infinite;
+}
+
+.guitar-img {
+    animation: swing 2s infinite ease-in-out;
+}
+
+.pet-img {
+    animation: float 3s ease-in-out infinite;
+}
+
+.beauty-img{
+    animation: float 3s ease-in-out infinite;
+}
+.recuerdo{
+    animation: float 3s ease-in-out infinite;
+}
+
+.singing-img, .beauty-img {
+    max-width: 250px;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes swing {
+    0%, 100% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+.photo-gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    transform: scale(1.15);
+}
+
+.pets img{
+    width: 60%;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.1);
+}
+
+.img-fixed img{
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    width: 100px;
+}
+
+.img-fixed{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}

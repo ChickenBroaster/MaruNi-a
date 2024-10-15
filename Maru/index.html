@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un Viaje para Maru</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Pantalla Inicial -->
+        <section id="inicio" class="screen active">
+            <h1 style="font-size: 80px;">¡Hola, Maru!</h1>
+            <p>¿Estás lista para un viaje especial?</p>
+            <button class="choice-btn" onclick="goToScreen('snoopy')">Snoooooooopy</button>
+            <button class="choice-btn" onclick="goToScreen('guitar')">Guitarra</button>
+            <button class="choice-btn" onclick="goToScreen('oreo')">Ver a Oreo</button>
+            <button class="choice-btn" onclick="goToScreen('cookie')">Ver a Cookie</button>
+            <button class="choice-btn" onclick="goToScreen('singing')">Lo hermoso que cantas</button>
+            <button class="choice-btn" onclick="goToScreen('beauty')">Lo linda que eres</button>
+            <button class="choice-btn" onclick="goToScreen('us')">NOSOTROS</button>
+        </section>
+
+        <!-- Sección de Snoopy -->
+        <section id="snoopy" class="screen">
+            <h1>Snoopy te dice: ¡Feliz Cumpleaños!</h1>
+            <img src="one.png" alt="Snoopy" class="snoopy-img">
+            <p>Snoopy siempre está ahí para hacerte sonreír, Maru.</p>
+            <button class="choice-btn" onclick="goToScreen('inicio')">Volver al Inicio</button>
+        </section>
+
+        <!-- Sección de Flores -->
+        <section id="snoopy" class="screen">
+            <h1>Snoopy te dice: ¡Feliz Cumpleaños!</h1>
+            <img src="two.png" alt="" class="snoopy-img">
+            <p>Snoopy siempre está ahí para hacerte sonreír, Maru.</p>
+            <button class="choice-btn" onclick="goToScreen('inicio')">Volver al Inicio</button>
+        </section>
+
+        <!-- Sección de Maracaibo -->
+        <section id="snoopy" class="screen">
+            <h1>Maracaibo</h1>
+            <img src="snoopy.png" alt="Snoopy" class="snoopy-img">
+            <p>Snoopy siempre está ahí para hacerte sonreír, Maru.</p>
+            <button class="choice-btn" onclick="goToScreen('inicio')">Volver al Inicio</button>
+        </section>
+
+        <!-- Sección de la Guitarra -->
+        <section id="guitar" class="screen">
+            <h1>La música que llevas en tu alma</h1>
+            <img src="two.png" alt="Guitarra" class="guitar-img">
+            <p>Tu voz y la guitarra siempre crean magia. ¡Canta algo hermoso!</p>
+            <button class="choice-btn" onclick="goToScreen('inicio')">Volver al Inicio</button>
+        </section>
+
+        <!-- Sección de Oreo -->
+        <section id="oreo" class="screen  pets">
+            <h1>Oreo, tu mejor amigo peludo</h1>
+            <img src="oreo.jpeg" alt="Oreo" class="pet-img">
+            <p>Siempre fiel, siempre a tu lado, ¡Oreo es un amor!</p>
+            <button class="choice-btn" onclick="goToScreen('inicio')">Volver al Inicio</button>
+        </section>
+
+        <!-- Sección de Cookie -->
+        <section id="cookie" class="screen  pets">
+            <h1>Cookie, tu gatito travieso</h1>
+            <img src="cookie.jpeg" alt="Cookie" class="pet-img">
+            <p>Siempre con sus ocurrencias, Cookie sabe cómo hacerte reír.</p>
+            <button class="choice-btn" onclick="goToScreen('inicio')">Volver al Inicio</button>
+        </section>
+
+        <!-- Sección de lo hermoso que canta -->
+        <section id="singing" class="screen">
+            <h1>Tu voz, una melodía hermosa</h1>
+            <p>Me encanta escucharte cantar, lo que sea, de la forma que sea, tienes una voz increible.</p>
+            <button class="choice-btn" onclick="goToScreen('inicio')">Volver al Inicio</button>
+        </section>
+
+        <!-- Sección de lo linda que es -->
+        <section id="beauty" class="screen">
+            <h1>Lo linda que eres, por dentro y por fuera</h1>
+            <img src="maru.jpeg" alt="Linda" class="beauty-img">
+            <p>Eres única y especial, tanto en tu exterior como en tu corazón.</p>
+            <button class="choice-btn" onclick="goToScreen('inicio')">Volver al Inicio</button>
+        </section>
+
+        <!-- Sección de NOSOTROS -->
+        <section id="us" class="screen">
+            <h1>Nuestros Recuerdos</h1>
+            <div class="photo-gallery">
+                <img src="nosotros-removebg.png" alt="Recuerdo 1" class="recuerdo">
+            </div>
+            <p>Juntos hemos creado recuerdos inolvidables que siempre estarán con nosotros.</p>
+            <button class="choice-btn" onclick="goToScreen('inicio')">Volver al Inicio</button>
+        </section>
+    </div>
+
+ 
+    <script src="main.js"></script>
+</body>
+</html>
